@@ -1,0 +1,29 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>Login Page</title>  
+    <link rel="stylesheet" href="styles_f.css">  
+</head>  
+<body>  
+    <div class="container">  
+        <h1>Welcome to our App</h1>  
+        <div class="login-container">  
+            <h2>Login</h2>  
+            <input type="text" id="username" placeholder="Username" />  
+            <input type="password" id="password" placeholder="Password" />  
+            <button onclick="login()">Login</button>    
+        </div>  
+
+        <div id="myModal" class="modal">  
+            <div class="modal-content">  
+                <span class="close-button" onclick="closeModal()">&times;</span>  
+                <h2>Oops!</h2>  
+                <p>You can't use bad words!</p>  
+            </div>  
+        </div>  
+    </div>  
+ 
+
+    <script src="script_f.js"></script>  
+</body>  
+</html>

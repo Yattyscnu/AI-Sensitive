@@ -1,0 +1,42 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Page</title>  
+    <link rel="stylesheet" href="styles_f.css">  
+</head>  
+<body>  
+    <div class="container">  
+        <div class="chat-container">  
+            <h1>Welcome to the Chat</h1>  
+            <div class="chat-box">  
+                <!-- Chat messages will be displayed here -->  
+            </div>  
+            <input type="text" id="chatInput" placeholder="Type your message..." />  
+            <button onclick="sendMessage()">Send</button>  
+        </div>  
+
+        <div id="modeModal" class="modal">
+            <div class="modal-content">
+                <h2>Select the level of filtering</h2>
+                <button onclick="setMode(0)">Light Filtering</button>
+                <button onclick="setMode(1)">Moderate Filtering</button>
+                <button onclick="setMode(2)">Heavy Filtering</button>
+                <button onclick="setMode(3)">Strict Filtering</button>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">  
+            <div class="modal-content">  
+                <span class="close-button" onclick="closeModal()">&times;</span>  
+                <h2>Oops!</h2>  
+                <p>You can't use bad words!</p>  
+            </div>  
+        </div>  
+    </div>  
+
+    <script src="chat_f.js"></script>  
+</body>  
+</html>
+
